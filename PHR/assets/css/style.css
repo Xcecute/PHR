@@ -1,0 +1,92 @@
+.cogent-color-white{
+    color: #f8f9fa;
+}
+.link-cogent-1{
+    background-color: white;
+    color: blue;
+    border: 1px #859642 solid;
+    font-size: 12px;
+    margin-left: 23px;
+    padding: 5px 24px;
+}
+.member-photo{
+	width: 520px;
+    position: relative;
+    left: -31px;
+}
+.member{
+	margin-top: 11px;
+	width: 46%;
+}
+.member .media-content{
+	margin-left: 90px;
+}
+.home>.card-box{
+	text-align: justify;
+}
+.card-box .card-title{
+	text-align: center;
+}
+.products-btn {
+    background-color: rgb(15, 66, 185);
+    color: #ffffff;
+}
+.logo-bottom img{
+	margin-top: -11px;
+}
+.aboutus img{
+	 border-radius: 13px; 
+	 margin-top: 16px; 
+	 height: 223px; 
+	 width: 352px;    
+	 margin-right: 53px;
+}
+
+.footer-top-bgcolor{
+    Background-color: rgb(15, 32, 185);
+    padding-top: 20px; 
+    padding-left: 20px; 
+    padding-right: 20px; 
+    margin-right: -30px;
+    margin-top: -30px; 
+    margin-left: -30px;
+    width: auto;
+}
+
+.footer-bottom-bgcolor{
+    Background-color: rgb(15, 32, 185);
+}
+
+@media only screen and (max-width: 600px) {
+	.member-photo{
+		max-width: 198px;
+		position: relative;
+    	left: 0px;
+	}
+	.member{
+		margin-top: 11px;
+		width: 100%;
+	}
+	.member .media-content {
+	    margin-left: 0px;
+	}
+	.member .mbr-author-desc{
+		text-align: center;
+	}
+	.member .mbr-author-name{
+		text-align: center;
+	}
+	.mbr-about{
+		text-align: center;
+	}
+	.video-background{display: none;}
+	.home{
+		margin-top: 64px;
+	}
+	.aboutus img{
+	    border-radius: 13px;
+        margin-top: 16px;
+        height: 223px;
+	}
+} 
+
