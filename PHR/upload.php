@@ -24,7 +24,7 @@ $message = $_POST["message"];
 #mail parts
 $subject = "Application";
 $applicant = $_POST["email"];
-$recruiter = "phr.jamesian@gmail.com";
+$recruiter = "phr.jamesangelo@gmail.com";
 $headerApplicant = "From:" . $applicant;
 $headerRecruiter = "From:" . $recruiter;
 $submission = 
@@ -61,7 +61,7 @@ function apply()
 		#mail parts
 		$subject = "Application";
 		$applicant = $_POST["email"];
-		$recruiter = "phr.jamesian@gmail.com";
+		$recruiter = "phr.jamesangelo@gmail.com";
 		$headerApplicant = "From:" . $applicant;
 		$headerRecruiter = "From:" . $recruiter;
 		$submission = 
@@ -97,7 +97,7 @@ function notify()
 		#mail parts
 		$subject = "Application";
 		$applicant = $_POST["email"];
-		$recruiter = "phr.jamesian@gmail.com";
+		$recruiter = "phr.jamesangelo@gmail.com";
 		$headerApplicant = "From:" . $applicant;
 		$headerRecruiter = "From:" . $recruiter;
 		$submission = 
@@ -197,7 +197,7 @@ function deleteFile()
         $file = strval( $target_file);
         $uploadOk = 1;  
 
-        unlink($file);
+        echo $file;
     }
 
 function sendMail()
@@ -219,7 +219,7 @@ function sendMail()
 		#mail parts
 		$subject = "Application";
 		$applicant = $_POST["email"];
-		$recruiter = "phr.jamesian@gmail.com";
+		$recruiter = "phr.jamesangelo@gmail.com";
 		$headerApplicant = "From:" . $applicant;
 		$headerRecruiter = "From:" . $recruiter;
 		$submission = 
@@ -304,8 +304,8 @@ window.location = "http://www.cogenthc.com/PHRindex.html";
 #original
 #   ini_set( 'display_errors', 1 );
 #   error_reporting( E_ALL );
-#   $from = "phr.jamesian@gmail.com";
-#   $to = "phr.jamesian@gmail.com";
+#   $from = "phr.jamesangelo@gmail.com";
+#   $to = "phr.jamesangelo@gmail.com";
 #   $subject = "Checking PHP mail";
 #   $message = "PHP mail works just fine";
 #   $headers = "From:" . $from;

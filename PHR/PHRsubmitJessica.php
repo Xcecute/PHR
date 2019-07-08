@@ -189,6 +189,18 @@ function getImageFilename()
         echo $file;
     }
 
+function deleteFile()
+    {
+        $target_dir = "uploads/";
+        $target_file = $target_dir . basename($_FILES["fileToUpload"]["name"]);
+        $imageFileType = strtolower(pathinfo($target_file,PATHINFO_EXTENSION));
+        $file = strval( $target_file);
+        $uploadOk = 1;  
+
+        unlink($file);
+    }
+
+
 
 function sendMail()
     {
@@ -283,7 +295,7 @@ upload();
 sendMail();
 //apply();
 notify();
-
+deleteFile();
 ?>
 <script type="text/javascript">
 window.location = "http://www.cogenthc.com/SUBMITindex.html";
