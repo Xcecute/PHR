@@ -24,7 +24,7 @@ $message = $_POST["message"];
 #mail parts
 $subject = "Application";
 $applicant = $_POST["email"];
-$recruiter = "apply.phr@gmail.com";
+$recruiter = "phr.satalke@gmail.com";
 $headerApplicant = "From:" . $applicant;
 $headerRecruiter = "From:" . $recruiter;
 $submission = 
@@ -61,7 +61,7 @@ function apply()
 		#mail parts
 		$subject = "Application";
 		$applicant = $_POST["email"];
-		$recruiter = "apply.phr@gmail.com";
+		$recruiter = "phr.satalke@gmail.com";
 		$headerApplicant = "From:" . $applicant;
 		$headerRecruiter = "From:" . $recruiter;
 		$submission = 
@@ -97,7 +97,7 @@ function notify()
 		#mail parts
 		$subject = "Application";
 		$applicant = $_POST["email"];
-		$recruiter = "apply.phr@gmail.com";
+		$recruiter = "phr.satalke@gmail.com";
 		$headerApplicant = "From:" . $applicant;
 		$headerRecruiter = "From:" . $recruiter;
 		$submission = 
@@ -209,7 +209,7 @@ function sendMail()
 		#mail parts
 		$subject = "Application";
 		$applicant = $_POST["email"];
-		$recruiter = "apply.phr@gmail.com";
+		$recruiter = "phr.satalke@gmail.com";
 		$headerApplicant = "From:" . $applicant;
 		$headerRecruiter = "From:" . $recruiter;
 		$submission = 
@@ -294,8 +294,8 @@ window.location = "http://www.cogenthc.com/index.html";
 #original
 #   ini_set( 'display_errors', 1 );
 #   error_reporting( E_ALL );
-#   $from = "apply.phr@gmail.com";
-#   $to = "apply.phr@gmail.com";
+#   $from = "phr.satalke@gmail.com";
+#   $to = "phr.satalke@gmail.com";
 #   $subject = "Checking PHP mail";
 #   $message = "PHP mail works just fine";
 #   $headers = "From:" . $from;

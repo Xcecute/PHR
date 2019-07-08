@@ -7,12 +7,8 @@ error_reporting( E_ALL );
 
 #get data from the forms
 $name = $_POST["name"];
-$bdate = $_POST["bdate"];
 $phone1 = $_POST["phone1"];
-$phone2 = $_POST["phone2"];
 $email = $_POST["email"];
-$position1 = $_POST["position1"];
-$position2 = $_POST["position2"];
 $message = $_POST["message"];
 //read the atachment file contents into a string,
 //encode it with MIME base64,
@@ -22,7 +18,6 @@ $message = $_POST["message"];
 
 
 #mail parts
-$random_hash = md5(date('r', time()));
 $subject = "Inquiry";
 $applicant = $_POST["email"];
 $recruiter = "apply.phr@gmail.com";
@@ -30,14 +25,9 @@ $headerApplicant = "From:" . $applicant;
 $headerRecruiter = "From:" . $recruiter;
 $submission = 
 				"Name: " . $name . "\r\n" .
-				"Birthday: " . $bdate . "\r\n" .
 				"Phone Number 1: " . $phone1 . "\r\n" .
-				"Phone Number 2: " . $phone2 . "\r\n" .
 				"Email Address: " . $email . "\r\n" .
-				"Position 1: " . $position1 . "\r\n" .
-				"Position 2: " . $position2 . "\r\n" .
 				"His/Her Message: " . $message . "\r\n";
-				#ob_get_clean();
 
 
 $feedback = "Your Inquiry has been sent";
@@ -48,8 +38,16 @@ mail($recruiter,$subject,$submission,$headerApplicant);
 #mail to appliant
 mail($applicant,$subject,$feedback,$headerRecruiter);
 
+echo "Your inquiry has been sent";
 
-
+if (isset($_POST['submit']))
+    {   
+    ?>
+<script type="text/javascript">
+window.location = "http://www.cogenthc.com/contactus.html";
+</script>      
+    <?php
+    }
 
 #original
 #   ini_set( 'display_errors', 1 );
